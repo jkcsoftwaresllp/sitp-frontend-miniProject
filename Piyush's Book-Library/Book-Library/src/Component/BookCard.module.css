@@ -1,0 +1,65 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+  margin: 12px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 180px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgb(66, 99, 152);
+}
+
+.coverImage {
+  height: 240px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 8px 0 4px;
+  color: #111827;
+  line-height: 1.2;
+  height: 2.4em;
+  overflow: hidden;
+}
+
+.authors {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 12px;
+  height: 1.6em;
+  overflow: hidden;
+}
+
+.detailsButton,
+.favoriteButton {
+  background-color: #3b82f6;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin: 4px;
+  transition: background-color 0.2s ease;
+  color: white;
+}
+
+.detailsButton:hover,
+.favoriteButton:hover {
+  background-color: #2563eb;
+}
+
+.favorite {
+  background-color: #4267b8;
+  color: #ffffff;
+  font-weight: 600;
+}
