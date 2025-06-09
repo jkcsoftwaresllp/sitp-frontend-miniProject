@@ -1,0 +1,159 @@
+/* Habit row */
+.habit-row {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.habit-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Habit info */
+.habit-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.habit-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.habit-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #374151;
+  flex-shrink: 0;
+  min-width: 100px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #059669);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+/* Habit days */
+.habit-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.day-button {
+  position: relative;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.8rem;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-button:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  transform: scale(1.05);
+}
+
+.day-button.completed {
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-color: #059669;
+  color: white;
+}
+
+.day-button.completed:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+}
+
+.day-name {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.day-date {
+  display: block;
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.checkmark {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Responsive design for HabitRow */
+@media (max-width: 768px) {
+  .habit-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .habit-info {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .habit-name {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .habit-days {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+  }
+  
+  .day-button {
+    padding: 8px 4px;
+    min-height: 50px;
+    font-size: 0.7rem;
+  }
+  
+  .habit-info {
+    gap: 8px;
+  }
+  
+  .progress-bar {
+    margin: 0 5px;
+  }
+}
