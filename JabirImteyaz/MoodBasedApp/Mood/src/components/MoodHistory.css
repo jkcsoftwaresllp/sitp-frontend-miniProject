@@ -1,0 +1,45 @@
+.no-history {
+  margin-top: 20px;
+  text-align: center;
+  color: #555;
+}
+
+.mood-history-container {
+  margin-top: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.mood-history-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mood-history-item {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mood-history-info {
+  display: flex;
+  align-items: center;
+}
+
+.mood-emoji {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.delete-button {
+  background: transparent;
+  border: none;
+  color: #900;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
