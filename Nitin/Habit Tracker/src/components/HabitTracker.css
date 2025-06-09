@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,6 @@ body {
   line-height: 1.6;
 }
 
-/* Main container */
 .habit-tracker {
   max-width: 1200px;
   margin: 0 auto;
@@ -20,7 +19,7 @@ body {
   min-height: 100vh;
 }
 
-/* Header */
+
 .header {
   text-align: center;
   margin-bottom: 30px;
@@ -48,7 +47,6 @@ body {
   font-weight: 600;
 }
 
-/* Controls */
 .controls {
   display: flex;
   gap: 15px;
@@ -91,14 +89,14 @@ body {
   box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
 }
 
-/* Habits container */
+
 .habits-container {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-/* Empty state */
+
 .empty-state {
   text-align: center;
   padding: 60px 20px;
@@ -106,7 +104,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .habit-tracker {
     padding: 15px;

@@ -1,4 +1,4 @@
-/* Habit row */
+
 .habit-row {
   background: white;
   border-radius: 12px;
@@ -17,7 +17,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Habit info */
+
 .habit-info {
   display: flex;
   align-items: center;
@@ -60,7 +60,6 @@
   flex-shrink: 0;
 }
 
-/* Habit days */
 .habit-days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -119,7 +118,6 @@
   font-weight: bold;
 }
 
-/* Responsive design for HabitRow */
 @media (max-width: 768px) {
   .habit-row {
     grid-template-columns: 1fr;

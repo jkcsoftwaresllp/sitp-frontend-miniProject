@@ -4,7 +4,6 @@ import AddHabitForm from './AddHabitForm';
 import WeekHeader from './WeekHeader';
 import './HabitTracker.css';
 
-// Predefined habits
 const DEFAULT_HABITS = [
   { id: 1, name: 'Drink Water', icon: '💧' },
   { id: 2, name: 'Exercise', icon: '🏃‍♂️' },
@@ -13,7 +12,7 @@ const DEFAULT_HABITS = [
   { id: 5, name: 'Sleep 8hrs', icon: '😴' }
 ];
 
-// Get current week dates
+
 const getCurrentWeekDates = () => {
   const today = new Date();
   const currentDay = today.getDay();
@@ -33,7 +32,7 @@ const HabitTracker = () => {
   const [showAddForm, setShowAddForm] = useState(false);
   const [weekDates] = useState(getCurrentWeekDates());
 
-  // Load data from localStorage on mount
+ 
   useEffect(() => {
     const savedHabits = localStorage.getItem('habits');
     const savedCompleted = localStorage.getItem('completedHabits');
@@ -46,7 +45,7 @@ const HabitTracker = () => {
     }
   }, []);
 
-  // Save to localStorage whenever data changes
+
   useEffect(() => {
     localStorage.setItem('habits', JSON.stringify(habits));
   }, [habits]);
