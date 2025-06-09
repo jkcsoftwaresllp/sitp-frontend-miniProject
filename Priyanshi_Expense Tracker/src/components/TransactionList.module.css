@@ -1,0 +1,31 @@
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 16px 0;
+}
+.plus, .minus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafb;
+  border-left: 5px solid;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+.plus {
+  border-color: #16a34a;
+}
+.minus {
+  border-color: #dc2626;
+}
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
