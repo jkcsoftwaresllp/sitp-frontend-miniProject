@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #e8e4d9 0%, #f4f4f4 100%);
+  color: #2c3e50;
+}
+
+a {
+  text-decoration: none;
+  color: #1abc9c;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e74c3c;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin: 10px;
+  }
+}

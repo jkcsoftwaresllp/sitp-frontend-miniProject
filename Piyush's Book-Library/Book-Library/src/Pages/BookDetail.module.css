@@ -1,0 +1,91 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.detail {
+  background-color: #bad4ff;
+  padding: 32px 48px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+}
+
+.detail h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 24px 0 12px;
+}
+
+.detail p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #6b7280;
+}
+
+.reviewForm {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  margin-top: 6px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  color: black;
+  resize: none;
+}
+
+.textarea {
+  margin-top: 6px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  color: black;
+  resize: vertical;
+  min-height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.submitButton {
+  align-self: flex-start;
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #2563eb;
+}
+
+.savedReview {
+  margin-top: 32px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #3b82f6;
+}
