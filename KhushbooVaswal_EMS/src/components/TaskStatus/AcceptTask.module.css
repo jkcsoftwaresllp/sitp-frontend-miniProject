@@ -1,0 +1,73 @@
+
+
+.task {
+  height: 320px;
+  flex-shrink: 0;
+  padding: 1.25rem; /* 20px */
+  background-color: #e58621;
+  width: 400px;
+  gap: 1.25rem; /* 20px */
+  border-radius: 1rem; /* 16px */
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem; /* 14px */
+  width: 100%;
+}
+
+.categoryBadge {
+  background-color: #b91c1c; 
+  border-radius: 0.5rem; /* 8px */
+  height: 1.75rem; /* 28px */
+  padding: 0 0.5rem; /* 8px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.dueDate {
+  font-weight: 600;
+}
+
+.title {
+  margin-top: 1.25rem; /* 20px */
+  font-size: 1.875rem; /* 30px */
+  font-weight: 700;
+}
+
+.description {
+  margin-top: 1.25rem; /* 20px */
+  flex-grow: 1;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem; /* 16px */
+}
+
+.buttonCompleted {
+  background-color: #22c55e; 
+  padding: 9px 4px;
+  font-size: 0.875rem;
+  margin-right: 1rem; 
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.25rem; 
+}
+
+.buttonFailed {
+  background-color: #ef4444;
+  padding: 9px 4px;
+  font-size: 0.875rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}

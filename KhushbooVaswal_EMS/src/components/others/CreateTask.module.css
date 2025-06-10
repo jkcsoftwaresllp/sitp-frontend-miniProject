@@ -1,0 +1,69 @@
+.formContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Sections side by side on desktop */
+.leftSection,
+.rightSection {
+  width: 45%;
+  margin: 0;
+}
+
+.inputGroup {
+  margin: 4px 0; /* minimal vertical spacing */
+}
+
+input,
+textarea {
+  background-color: #304873;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin: 0; /* remove any margin */
+  display: block;
+}
+
+button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 8px;
+  background-color: #3335d1;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4169e1;
+}
+
+h3 {
+  margin: 0 0 4px 0; /* only bottom margin */
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Responsive: stack sections on mobile */
+@media (max-width: 768px) {
+  .formContainer {
+    flex-wrap: wrap;
+  }
+  .leftSection,
+  .rightSection {
+    width: 100%;
+    margin-bottom: 1rem; /* space between stacked sections */
+  }
+}

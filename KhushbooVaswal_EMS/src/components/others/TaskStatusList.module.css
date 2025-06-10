@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  justify-content: space-between; /* evenly distribute cards with space between */
+  gap: 1rem; /* gap between cards */
+  margin: 1rem;
+  height: 10rem;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex-grow: 1;      /* cards grow equally */
+  flex-basis: 0;     /* base width 0 to let grow control size */
+  min-width: 150px;  /* minimum width for small screens */
+  max-width: 22%;    /* max width so 4 cards fit nicely in one row */
+  padding: 1rem;
+  border-radius: 0.75rem;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Background colors */
+.bg1 { background-color: #E58621; }
+.bg2 { background-color: #E52125; }
+.bg3 { background-color: #215FE5; }
+.bg4 { background-color: #7CE521; }
+
+/* Typography */
+.fontBold {
+  font-weight: 700;
+  font-size: 1.875rem;
+  margin: 0;
+}
+
+.fontSemi {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 640px) {
+  .container {
+    flex-wrap: wrap;  /* allow wrapping */
+    justify-content: center;
+    gap: 1rem;
+    height: auto;
+  }
+  .card {
+    max-width: 90%;
+    min-width: auto;
+    flex-basis: auto;
+  }
+}
