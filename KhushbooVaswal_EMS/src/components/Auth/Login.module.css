@@ -1,0 +1,105 @@
+.container {
+  background: rgb(10, 26, 52);
+  min-height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.heading {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.loginBox {
+  background: white;
+  border-radius: 24px;
+  width: 90%;
+  max-width: 600px;
+  min-height: 400px; 
+  padding: 4rem 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; 
+}
+
+.button {
+  background: #2e4fb1;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem; 
+  transition: background 0.3s ease;
+}
+
+.input {
+  background: #9dc4fa;
+  padding: 0.8rem 1rem;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  border: none;
+  color: black; 
+}
+
+.button:hover {
+  background: #1f3a7d;
+}
+
+/* Responsive Styles */
+
+/* Tablets and small desktops */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .loginBox {
+    padding: 3rem 1.5rem;
+    min-height: 350px;
+  }
+  .button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+  .input {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .loginBox {
+    width: 100%;
+    padding: 2rem 1rem;
+    min-height: 300px;
+    border-radius: 16px;
+  }
+  .button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+  .input {
+    font-size: 0.9rem;
+    padding: 0.7rem 0.8rem;
+  }
+}

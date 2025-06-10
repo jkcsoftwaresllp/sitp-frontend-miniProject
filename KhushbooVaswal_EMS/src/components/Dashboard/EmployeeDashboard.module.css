@@ -1,0 +1,23 @@
+.container {
+  background-color: #07142d;
+  min-height: 100vh;
+  color: white;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.logoutBtn {
+  margin-top: 1rem;
+  background-color: #3f3fff;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  float: right;
+}

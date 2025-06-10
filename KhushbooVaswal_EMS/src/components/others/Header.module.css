@@ -1,0 +1,38 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between; /* pushes children to edges */
+  align-items: center;            /* vertically centers */
+  padding: 2.5rem 2.5rem;         /* equivalent to p-10 */
+  width: 100%;                   /* full width */
+  box-sizing: border-box;        /* include padding in width */
+}
+
+.welcomeText {
+  font-weight: 500;      /* medium */
+  font-size: 1.25rem;    /* ~text-xl */
+  max-width: 70%;        /* optional, to avoid pushing button */
+  margin: 0;             /* reset default margin */
+}
+
+.username {
+  font-weight: 600;      /* semibold */
+  font-size: 1.875rem;   /* ~text-3xl */
+}
+
+.logoutButton {
+  background-color: #3335d1;
+  padding: 8px 24px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  width: auto;
+  max-width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #3b5bdb;
+}
